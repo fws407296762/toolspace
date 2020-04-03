@@ -14,7 +14,7 @@ module.exports = {
   module:{
     rules:[
       {
-        test:/.ts[x]?/,
+        test:/\.tsx?$/,
         loader:'awesome-typescript-loader'
       }
     ]
@@ -25,6 +25,9 @@ module.exports = {
       filename:config.htmlFileName
     })
   ],
+  resolve:{
+    extensions:['.ts','.tsx','.js','.jsx']
+  },
   devServer:{
     hot:true,
     compress:true,
