@@ -1,0 +1,7 @@
+@import '~antd/dist/antd.css';
+
+/*补丁*/
+.h100{height: 100%;}
+
+html,body{height: 100%;}
+.body,.body__main{height: 100%;}
